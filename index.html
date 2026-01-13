@@ -30,7 +30,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#educational">CV</a></li>
                 <li><a href="#media">Media</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -183,99 +182,7 @@
     </section>
 
     <!-- Educational Resources Section -->
-    <section id="educational" class="educational">
-        <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <!-- Header row: title + download button -->
-            <div class="cv-header" style="
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 1rem;
-            ">
-
-            <!-- Download button -->
-            <div class="cv-download" style="flex-shrink: 0;">
-                <a
-                href="./cv.pdf"
-                download
-                style="
-                    display: inline-flex;
-                    align-items: center;
-                    gap: .5rem;
-                    font-size: .9rem;
-                    font-weight: 600;
-                    line-height: 1.2;
-                    background-color: #2563eb;          /* blue-600 */
-                    color: #fff;
-                    padding: .6rem 1rem;
-                    border-radius: .75rem;               /* 12px rounded-xl */
-                    box-shadow: 0 4px 10px rgba(0,0,0,.15);
-                    text-decoration: none;
-                    transition: all .12s ease;
-                "
-                onmousedown="this.style.transform='scale(0.98) translateY(1px)'; this.style.boxShadow='inset 0 2px 4px rgba(0,0,0,.3)'"
-                onmouseup="this.style.transform=''; this.style.boxShadow='0 4px 10px rgba(0,0,0,.15)'"
-                onmouseleave="this.style.transform=''; this.style.boxShadow='0 4px 10px rgba(0,0,0,.15)'"
-                aria-label="Download my CV as PDF"
-                >
-                <span>Download CV</span>
-                <!-- download icon -->
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" viewBox="0 0 24 24" fill="currentColor"
-                    aria-hidden="true">
-                    <path d="M12 3a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 3.999a1 1 0 0 1-1.414 0l-4-3.999A1 1 0 1 1 8.707 10.293L11 12.586V4a1 1 0 0 1 1-1z"/>
-                    <path d="M5 20a1 1 0 1 1 0-2h14a1 1 0 1 1 0 2H5z"/>
-                </svg>
-                </a>
-            </div>
-            </div>
-
-            <!-- PDF viewer -->
-            <div class="cv-frame-wrap" style="
-                margin-top: 1.5rem;
-                border: 1px solid rgba(0,0,0,.08);
-                border-radius: .75rem;
-                overflow: hidden;
-                background-color: #fff;
-                color-scheme: light dark;
-                /* adaptive border for dark mode if you have dark mode classes */
-                ">
-            <div class="pdf-wrap" style="
-                    height: min(80vh, 800px);
-                    max-height: 80vh;
-                    overflow: auto;
-                    -webkit-overflow-scrolling: touch;
-                ">
-                <iframe
-                src="./cv.pdf#view=FitH"
-                title="Trung Quan Cao — CV"
-                style="
-                    width: 100%;
-                    height: 100%;
-                    border: 0;
-                    display: block;
-                "
-                scrolling="yes"
-                ></iframe>
-
-                <!-- Fallback for browsers that block iframe PDF -->
-                <object
-                data="./cv.pdf#view=FitH"
-                type="application/pdf"
-                style="width:100%; height:100%; border:0; display:none;"
-                >
-                <div style="padding:1.5rem; font-size:.9rem; line-height:1.4;">
-                    Your browser can't display PDFs inline.
-                    Please <a href="./cv.pdf" style="color:#2563eb; text-decoration:underline;">download the CV</a>.
-                </div>
-                </object>
-            </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Media Coverage Section -->
     <section id="media" class="media">
         <div class="container">
